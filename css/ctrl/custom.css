@@ -1,0 +1,577 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 10 Aug, 2017, 4:56:03 PM
+    Author     : developer
+*/
+.blockOverlay{z-index: 9999 !important}
+@media (min-width: 768px)
+{
+.modal-dialog {
+    width: 600px;
+    margin: 0px auto !important;
+}
+}
+
+.wid100{
+width:100px;
+}
+
+.repinpt{
+margin: 25px;
+    width: 150px !important;
+}
+/* Card */
+.card { 
+  position: relative;
+  background: #ffffff;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+  font-family: 'Source Sans Pro','Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+.card .input-container {
+  position: relative;
+  margin-bottom: 0px;
+}
+.card .input-container input, .card .input-container select, .card .input-container textarea {
+  outline: none;
+  z-index: 1;
+  position: absolute;
+  background: none;
+  width: 100%;
+  height: 35px;
+  border: 0;
+  color: #212121;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: 'Source Sans Pro','Helvetica Neue',Helvetica,Arial,sans-serif;
+  text-align: center;
+  text-align-last: center;
+    border: 1px solid #d2d6de;
+}
+.card .input-container textarea {
+  height: 80px;
+}
+
+.card .input-container label {
+  position: relative;
+  top: 0;
+  width : 100%;
+  text-align: center;
+  color: black;
+  font-size: 15px;
+  font-weight: 400;
+  font-family: 'Source Sans Pro','Helvetica Neue',Helvetica,Arial,sans-serif;
+  line-height: 35px;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+  margin-bottom: 0;
+}
+
+.card .input-container input:focus ~ label, .card .input-container select:focus ~ label, .card .input-container textarea:focus ~ label{
+  color: #212121;
+  -webkit-transform: translate(-30%, -25%) scale(0.75);
+          transform: translate(-30%, -25%) scale(0.75);
+}
+
+.card .input-container input:valid ~ label, .card .input-container select:valid ~ label, .card .input-container textarea:valid ~ label {
+  color: #212121;
+  -webkit-transform: translate(-30%, -25%) scale(0.75);
+          transform: translate(-30%, -25%) scale(0.75);
+}
+.card-btn{margin-top: 50px;}
+
+.disperror_medi{
+    margin-left: 4px;
+    font-size: 13px;
+    color: #b30000;
+    font-weight: lighter;
+}
+.adminred{
+    border-color: #FF0000 !important;
+}
+.success-msg-box{
+    text-align: center;color: green
+    
+}
+.error-msg-box{
+    text-align: center;color: red
+}
+.doc-select-file{padding: 3px 0 0 3px;}
+.doc-profile-img img{width:60px;height: 60px; border-radius: 50%;}
+
+.doc-file-label {
+    color: black;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: 'Source Sans Pro','Helvetica Neue',Helvetica,Arial,sans-serif;
+    line-height: 35px;
+
+}
+.doc-profile-img {
+    text-align: center;
+}
+.doc-upload-btn{  margin:0;border: 1px solid #c5c5c5;    padding: 2px 5px;}
+.btn-bg{background: rgba(26, 120, 44, 1)}
+.btn-bg {
+    background: rgba(26, 120, 44, 1);
+    color: #fff;
+}
+.btn-bg:hover{
+    background: rgba(26, 120, 44, 1);
+    color: #fff;
+}
+
+.addbutton{
+  background-color: rgba(26, 120, 44, 1)!important;
+    color: white !important;
+  border-radius:1px !important;
+}
+
+.addbutton:hover, .addbutton:focus,.addbutton:active, .addbutton:active:focus, .addbutton:active:hover {
+  background-color: rgba(26, 120, 44, 1) !important;
+    color: white !important;
+    border-radius:1px !important;
+}
+
+.addbuttonheader{
+  background-color: rgba(26, 120, 44, 1)!important;
+    color: white !important;
+  border-radius:1px !important;
+  padding:5px;
+}
+
+.addbuttonheader:hover, .addbuttonheader:focus,.addbuttonheader:active, .addbuttonheader:active:focus, .addbuttonheader:active:hover {
+  background-color: rgba(26, 120, 44, 1) !important;
+    color: white !important;
+    border-radius:1px !important;
+}
+
+
+
+.padd10{
+ padding:10px; 
+}
+
+.ui-widget.ui-widget-content {
+    border: 1px solid #c5c5c5;
+	z-index: 9999 !important;
+}
+
+.skin-blue .main-header li.user-header,li.user-header.p  {
+    background-color: #afe8ab !important;
+}
+
+.navbar-nav>.user-menu>.dropdown-menu>li.user-header>p {
+    z-index: 5;
+    color:#000 !important;
+    color: rgba(255,255,255,0.8);
+    font-size: 17px;
+    margin-top: 10px;
+}
+
+.navbar-nav>.user-menu>.dropdown-menu>.user-header .btn-default {
+    color: white !important;
+    background-color: rgba(26, 120, 44, 1) !important;
+}
+
+.textareapadd10 {
+    padding-top: 10px;
+   max-width: 100%; 
+  max-height:160%;
+}
+/*-- multy select dropdown start -- */
+span.multiselect-native-select {
+    position: relative
+}
+span.multiselect-native-select select {
+    border: 0!important;
+    clip: rect(0 0 0 0)!important;
+    height: 1px!important;
+    margin: -1px -1px -1px -3px!important;
+    overflow: hidden!important;
+    padding: 0!important;
+    position: absolute!important;
+    width: 1px!important;
+    left: 50%;
+    top: 30px
+}
+.multiselect-container {
+    position: absolute;
+    list-style-type: none;
+    margin: 0;
+    padding: 0
+}
+.multiselect-container .input-group {
+    margin: 5px
+}
+.multiselect-container>li {
+    padding: 0
+}
+.multiselect-container>li>a.multiselect-all label {
+    font-weight: 700
+}
+.multiselect-container>li.multiselect-group label {
+    margin: 0;
+    padding: 3px 20px 3px 20px;
+    height: 100%;
+    font-weight: 700
+}
+.multiselect-container>li.multiselect-group-clickable label {
+    cursor: pointer
+}
+.multiselect-container>li>a {
+    padding: 0
+}
+.multiselect-container>li>a>label {
+    margin: 0;
+    height: 100%;
+    cursor: pointer;
+    font-weight: 400;
+    padding: 3px 0 3px 30px
+}
+.multiselect-container>li>a>label.radio, .multiselect-container>li>a>label.checkbox {
+    margin: 0
+}
+.multiselect-container>li>a>label>input[type=checkbox] {
+    margin-bottom: 5px
+}
+.btn-group>.btn-group:nth-child(2)>.multiselect.btn {
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px
+}
+.form-inline .multiselect-container label.checkbox, .form-inline .multiselect-container label.radio {
+    padding: 3px 20px 3px 40px
+}
+.form-inline .multiselect-container li a label.checkbox input[type=checkbox], .form-inline .multiselect-container li a label.radio input[type=radio] {
+    margin-left: -20px;
+    margin-right: 0
+}
+
+
+.multiselect.dropdown-toggle.btn-block.text-left.btn.btn-default{
+  background: transparent;
+  padding: 5px;
+  font-size: 15px;
+  font-weight: 400;
+  color: #000;
+  font-family: 'Source Sans Pro','Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+
+/*-- multy select dropdown end -- */
+.pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover, .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover {
+    z-index: 0 !important;
+    color: #fff;
+    cursor: default;
+    background-color: rgba(26, 120, 44, 1);
+    border-color: rgba(26, 120, 44, 1);
+}
+.glyphicon.glyphicon-edit {
+  color: rgba(26, 120, 44, 1);
+}
+.box.box-info {
+    border-top-color: rgba(26, 120, 44, 1) !important;
+}
+
+.botm {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+}
+
+.hffgreen {
+	background-color: rgba(26, 120, 44, 1);
+	color: white;
+}
+.new-account {
+    display: block;
+    margin-top: 10px;
+}
+.error-span{margin: auto;display: table;height: 20px}
+
+/*-- dashboard css start -- */
+.dash-box {
+  background: rgba(26, 120, 44, 1);
+  margin: 15px 17px;
+  color: #fff;
+  padding: 10px;
+  border-radius: 15px;
+  box-shadow: 1px 1px 10px rgba(26, 120, 44, 1);
+  -webkit-transition: all 0.1s ease 0.1s;
+  -moz-transition: all 0.1s ease 0.1s;
+  -o-transition: all 0.1s ease 0.1s;
+  transition: all 0.1s ease 0.1s;
+}
+  .dash-box:hover {
+  box-shadow: 1px 1px 20px rgb(3, 68, 16);
+  }
+.dash-icon-box{text-align: center;}
+.dash-icon-box i {
+  font-size: 50px;
+  color: #fff;
+  text-shadow: 3px 3px 9px #2f302f;
+}
+.dash-title-box {
+  text-align: center;
+  margin-top: 5px;
+}
+.dash-box a {
+  color: #fff;
+  font-size: 17px;
+}
+.dash-box a:hover {
+  color: #fff;
+}
+@media only screen and (max-width: 1280px) {
+  .dash-box {
+  margin: 15px;
+}
+}
+@media only screen and (max-width: 1024px) {
+.dash-box {
+  margin: 15px 13px;
+  min-height: 125px;
+}
+.tbl-responsive{overflow-x: scroll;}
+}
+@media only screen and (max-width: 960px) {
+.dash-box {
+  width: 18%;
+  float: left;
+  margin: 15px 7px;
+}
+}
+@media only screen and (max-width: 900px) {
+.dash-box {
+  width: 17%;
+  float: left;
+  margin: 15px 10px;
+}
+}
+@media only screen and (max-width: 800px) {
+.dash-box {
+  width: 16%;
+  float: left;
+  margin: 15px 11px;
+  min-height: 105px;
+}
+.dash-box a {
+  font-size: 15px;
+}
+.dash-icon-box i {
+  font-size: 35px;
+}
+}
+
+@media only screen and (max-width: 768px) {
+.modal-dialog {
+    width: 600px;
+    margin: 0px auto !important;
+}
+  
+  .dash-box {
+  width: 17%;
+  float: left;
+  margin: 15px 11px;
+  min-height: 105px;
+}
+
+}
+@media only screen and (max-width: 767px) {
+.navbar-static-top {
+/*  position: absolute;
+  top: 0;
+  right: 0;
+  width: 70px !important;
+*/}
+.logo {
+    height: auto !important;
+}
+    .tab-view{float: left;}
+    .funkyradio-left {
+  padding: 0 !important;
+  margin-bottom: 20px !important;
+}
+}
+
+@media only screen and (max-width: 640px) {
+.dash-box {
+  margin: 15px 9px;
+}
+}
+@media only screen and (max-width: 600px) {
+.modal-dialog {
+  width: 80%;
+}
+
+}
+@media only screen and (max-width: 500px) {
+.dash-box {
+  width: 30%;
+  float: left;
+  margin: 15px 7px;
+  min-height: 115px;
+}
+.dash-icon-box i {
+  font-size: 40px;
+}
+.dash-box a {
+  font-size: 17px;
+}
+}
+@media only screen and (max-width: 414px) {
+.dash-box {
+  width: 29%;
+  margin: 15px 8px;
+}
+}
+@media only screen and (max-width: 360px) {
+.dash-box {
+  width: 28%;
+  margin: 15px 9px;
+}
+}@media only screen and (max-width: 320px) {
+.dash-box {
+  width: 44%;
+  margin: 15px 9px;
+}
+}
+/*-- dashboard css end -- */
+.funkyradio div {
+  clear: both;
+  overflow: hidden;
+}
+
+.funkyradio label {
+  width: 100%;
+  border-radius: 3px;
+  border: 1px solid #D1D3D4;
+  font-weight: normal;
+}
+
+.funkyradio input[type="radio"]:empty,
+.funkyradio input[type="checkbox"]:empty {
+  display: none;
+}
+
+.funkyradio input[type="radio"]:empty ~ label,
+.funkyradio input[type="checkbox"]:empty ~ label {
+  position: relative;
+  line-height: 33px;
+  text-indent: 3.25em;
+  margin: 0;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.funkyradio input[type="radio"]:empty ~ label:before,
+.funkyradio input[type="checkbox"]:empty ~ label:before {
+  position: absolute;
+  display: block;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  content: '';
+  width: 2.5em;
+  background: #D1D3D4;
+  border-radius: 3px 0 0 3px;
+}
+
+.funkyradio input[type="radio"]:hover:not(:checked) ~ label,
+.funkyradio input[type="checkbox"]:hover:not(:checked) ~ label {
+  color: #888;
+}
+
+.funkyradio input[type="radio"]:hover:not(:checked) ~ label:before,
+.funkyradio input[type="checkbox"]:hover:not(:checked) ~ label:before {
+  content: '\2714';
+  text-indent: .9em;
+  color: #C2C2C2;
+}
+
+.funkyradio input[type="radio"]:checked ~ label,
+.funkyradio input[type="checkbox"]:checked ~ label {
+  color: #777;
+}
+
+.funkyradio input[type="radio"]:checked ~ label:before,
+.funkyradio input[type="checkbox"]:checked ~ label:before {
+  content: '\2714';
+  text-indent: .9em;
+  color: #333;
+  background-color: #ccc;
+}
+
+.funkyradio input[type="radio"]:focus ~ label:before,
+.funkyradio input[type="checkbox"]:focus ~ label:before {
+  box-shadow: 0 0 0 3px #999;
+}
+
+.funkyradio-default input[type="radio"]:checked ~ label:before,
+.funkyradio-default input[type="checkbox"]:checked ~ label:before {
+  color: #333;
+  background-color: #ccc;
+}
+
+.funkyradio-primary input[type="radio"]:checked ~ label:before,
+.funkyradio-primary input[type="checkbox"]:checked ~ label:before {
+  color: #fff;
+  background-color: #337ab7;
+}
+
+.funkyradio-success input[type="radio"]:checked ~ label:before,
+.funkyradio-success input[type="checkbox"]:checked ~ label:before {
+  color: #fff;
+  background-color: #5cb85c;
+}
+
+.funkyradio-danger input[type="radio"]:checked ~ label:before,
+.funkyradio-danger input[type="checkbox"]:checked ~ label:before {
+  color: #fff;
+  background-color: #d9534f;
+}
+
+.funkyradio-warning input[type="radio"]:checked ~ label:before,
+.funkyradio-warning input[type="checkbox"]:checked ~ label:before {
+  color: #fff;
+  background-color: #f0ad4e;
+}
+
+.funkyradio-info input[type="radio"]:checked ~ label:before,
+.funkyradio-info input[type="checkbox"]:checked ~ label:before {
+  color: #fff;
+  background-color: #5bc0de;
+}
+.funkyradio.col-md-6 {
+    margin: 0;
+    padding:0 10px 0 0;
+}
+.funkyradio-right{padding:0 !important;}
+.bcp-label {
+    position: absolute;
+    font-size: 10px;
+    top: 1px;
+    left: 20px;
+    font-weight: normal;
+}
+.file-opacity{opacity: 0; font-size: 0;}
+
+.upload-img-name {
+    text-align: center;
+    background: none;
+    border: none;
+    height: 18px;
+    padding: 0;
+    margin: 5px 0 0 0;
+}
+.upload-img-name:focus {
+  border-color: #fff !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+}

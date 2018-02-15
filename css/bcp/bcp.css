@@ -1,0 +1,1006 @@
+#new_reg{
+    display:none;
+}
+
+.radio_item{
+    display: none !important;
+    }
+
+    .genderimg {
+    opacity: 0.3;
+    }
+    
+    .radio_item:checked + Label .genderimg {
+    opacity: 1;
+    }
+    
+
+    
+
+label {
+cursor: pointer;   
+}
+.disprequired{
+    margin-left: 0px;
+    font-size: 15px;
+    color: #b30000;
+    font-weight: lighter;
+}
+
+.disperror{
+    margin-left: -178px;
+    font-size: 12px;
+    color: #b30000;
+}
+
+.disp-error-patient{
+    margin-left: 0px;
+    font-size: 12px;
+    color: #b30000;
+    font-weight: lighter;
+}
+.disp-error-primary{
+    margin-left: 12px;
+    font-size: 12px;
+    color: #b30000;
+    font-weight: lighter;
+}
+
+.validgreen{
+        border-color:#2eb82e !important;
+    }
+.validred{
+        border-color:#b30000 !important;
+    }
+
+    .pad15{
+        padding-left: 15px !important;
+    }    
+    
+    
+.ms-choice {
+     display: block;
+     width: 100%;
+     height: 26px;
+     padding: 0;
+     overflow: hidden;
+ }
+ 
+ .ms-drop {
+     width: 100%;
+     overflow: hidden;
+     display: none;
+     margin-top: -1px;
+     text-overflow: ellipsis;
+ }
+ 
+.ms-drop ul > li label {
+   font-weight: normal;
+}
+
+ .ms-drop ul > li label.optgroup {
+     font-weight: bold;
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.mycheckbox {
+	width: 18px !important;
+	height: 18px !important;
+	margin-right: 10px !important;
+}
+
+.stylefont {
+	font-family: 'Source Sans Pro','Helvetica Neue',Helvetica,Arial,sans-serif;
+	font-weight: 700 !important;
+	font-style: normal !important;
+}
+
+
+.stylefontinnerpages {
+	font-family: 'Source Sans Pro','Helvetica Neue',Helvetica,Arial,sans-serif;
+	font-weight: 700 !important;
+	font-style: normal !important;
+}
+
+body {
+	background-image: url('#.jpg');
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+.landingbody {
+	background-image: url('#.png');
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+a:focus, a:hover {
+    /* color: #ffffff !important; */
+    text-decoration: none !important; 
+}
+
+/* Multiselect */
+
+span.multiselect-native-select {
+	position: relative
+}
+span.multiselect-native-select select {
+	border: 0!important;
+	clip: rect(0 0 0 0)!important;
+	height: 1px!important;
+	margin: -1px -1px -1px -3px!important;
+	overflow: hidden!important;
+	padding: 0!important;
+	position: absolute!important;
+	width: 1px!important;
+	left: 50%;
+	top: 30px
+}
+.multiselect-container {
+	position: absolute;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+        margin-left: -70px !important;       
+       
+
+}
+.multiselect-container .input-group {
+	margin: 5px
+}
+.multiselect-container>li {
+	padding: 0
+}
+.multiselect-container>li>a.multiselect-all label {
+	font-weight: 700
+}
+.multiselect-container>li.multiselect-group label {
+	margin: 0;
+	padding: 3px 20px 3px 20px;
+	height: 100%;
+	font-weight: 700
+}
+.multiselect-container>li.multiselect-group-clickable label {
+	cursor: pointer
+}
+.multiselect-container>li>a {
+	padding: 0
+}
+.multiselect-container>li>a>label {
+	margin: 0;
+	height: 100%;
+	cursor: pointer;
+	font-weight: 400;
+	padding: 3px 0 3px 30px
+}
+.multiselect-container>li>a>label.radio, .multiselect-container>li>a>label.checkbox {
+	margin: 0
+}
+.multiselect-container>li>a>label>input[type=checkbox] {
+	margin-bottom: 5px
+}
+.btn-group>.btn-group:nth-child(2)>.multiselect.btn {
+	border-top-left-radius: 4px;
+	border-bottom-left-radius: 4px
+}
+.form-inline .multiselect-container label.checkbox, .form-inline .multiselect-container label.radio {
+	padding: 3px 20px 3px 40px
+}
+.form-inline .multiselect-container li a label.checkbox input[type=checkbox], .form-inline .multiselect-container li a label.radio input[type=radio] {
+	margin-left: -20px;
+	margin-right: 0
+}
+
+.txtlft{
+            text-align: end;
+}
+.txtrgt{
+        text-align: right;
+        margin-right: 30px;
+}
+.3nav{
+	width: 5%;
+	height: auto;
+	font-size: 35px;
+}
+
+.paddtop{
+	padding-top: 12px
+}
+
+.centeralig {
+	padding-left: 38% !important;
+}
+
+@media only screen and (max-width: 600px) {
+	.centeralig {
+		padding-left: 35% !important;
+	}
+}
+
+.sidenav {
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color: rgba(26, 120, 44, 1);
+	overflow-x: hidden;
+	transition: 0.5s;
+	padding-top: 60px;
+}
+
+.sidenav a {
+	padding: 4px 0px 0px 14px;
+	text-decoration: none;
+	font-size: 14px;
+	color: white;
+	display: block;
+	transition: 0.3s;
+}
+
+.sidenav a:hover, .offcanvas a:focus {
+	color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+	position: absolute;
+	top: 0;
+	right: 25px;
+	font-size: 36px;
+	margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+	.sidenav {
+		padding-top: 15px;
+	}
+	.sidenav a {
+		font-size: 18px;
+	}
+}
+
+.fltleft {
+	float: left !important;
+}
+
+@media (min-width:491px) and (max-width: 766px) {
+    .clox2{
+
+    width: 10.666667% !important;
+  }
+}
+
+.fltright {
+	float: right !important;
+}
+
+.newpasswordh5 {
+	font-size: 13px;
+	text-align: left;
+	margin-bottom: 5px;
+}
+
+.confirmpasswordh5 {
+	font-size: 13px;
+	text-align: left;
+	margin-bottom: 5px;
+}
+
+.passwordh5 {
+	font-size: 13px;
+	text-align: left;
+	margin-bottom: 5px;
+}
+
+.passwordh3 {
+	font-size: 13px;
+	text-align: left;
+	margin-bottom: 5px;
+}
+
+.loginpassword {
+	font-size: 13px;
+	text-align: left;
+	margin-bottom: -4px;
+        margin-top: 6px;
+}
+
+.logininput {
+	border-radius: 1px !important;
+        margin-bottom: 4px !important;
+}
+
+.padleftchief {
+	padding-left: 20px;
+}
+
+.inputwidth {
+	width: 40% !important;
+}
+
+.width70 {
+	width: 70% !important;
+}
+
+@media only screen and (max-width: 1040px) {
+    .width70 {
+	width: 100% !important;
+}
+}
+
+.padleft{
+	margin-left: -20px !important;
+}
+
+
+.chiheight {
+	height: 60px !important;
+}
+
+.loginusername {
+	font-size: 13px;
+	text-align: left;
+	margin-bottom: 5px;
+        margin-top : 4px;
+}
+
+.loginspan {
+	margin-bottom: 16px;
+	border-radius: none;
+}
+
+.loginh3 {
+	font-size: 13px;
+	text-align: left;
+	margin-bottom: 5px;
+        margin-top : 4px !important;
+}
+
+.splashbody {
+	background-color: rgba(26, 120, 44, 1);
+}
+
+.spalshdiv {
+	padding-top: 250px !important;
+}
+
+@media (max-width: 700px) {
+   .spalshdiv {
+	padding-top: 400px !important;
+}
+}
+
+@media  (min-width: 701px) and  (max-width: 1050px) {
+   .spalshdiv {
+	padding-top: 200px !important;
+}
+}
+
+
+*[role="form"] {
+	padding: 15px;
+	margin: 0 auto;
+	background-color: #fff;
+	/* border-radius: 0.3em; */
+}
+
+*[role="form"] h2 {
+	margin-left: 5em;
+	margin-bottom: 1em;
+}
+
+.table-sortable tbody tr {
+	cursor: move;
+}
+
+.hffgreen {
+	background-color: rgba(26, 120, 44, 1);
+	color: white;
+}
+
+.navtop{
+	position: static !important;
+}
+
+.hffnavicon {
+	position: relative;
+	float: right;
+	padding: 9px 10px;
+	margin-top: 8px;
+	margin-right: 15px;
+	margin-bottom: 8px;
+	background-color: transparent;
+	background-image: none;
+	border: 1px solid transparent;
+	border-radius: 4px;
+}
+
+/* body {
+    background-image: url("u6.jpg")no-repeat center center fixed !important;
+    background-
+    background-repeat: no-repeat;
+    opacity:15%;
+} */
+
+.mrgtp{
+	margin-top: 70px !important;
+}
+
+/* For Login Page */
+.card-container.card {
+	max-width: 350px;
+	padding: 200px 40px;
+}
+
+@media (max-width: 700px) {
+  .card-container.card {
+	max-width: 350px;
+	padding: 350px 40px;
+}
+}
+
+@media  (min-width: 701px) and  (max-width: 1050px) {
+   .card-container.card {
+	max-width: 350px;
+	padding: 170px 40px;
+}
+}
+
+.reauth-email {
+	display: block;
+	color: #404040;
+	line-height: 2px;
+	margin-bottom: 10px;
+	font-size: 14px;
+	text-align: center;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.form-signin #inputEmail, .form-signin #inputPassword {
+	direction: ltr;
+	height: 30px;
+	font-size: 16px;
+}
+
+.form-signin input[type=email], .form-signin input[type=password],
+	.form-signin input[type=text], .form-signin button {
+	width: 100%;
+	display: block;
+	margin-bottom: 20px;
+	z-index: 1;
+	/* position: relative; */
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.form-signin .form-control:focus {
+	background-color: white !important;
+	outline: 0;
+	-webkit-box-shadow: inset 0 1px 1px white, 0 0 8px  !important;
+	box-shadow: inset 0 1px 1px white, 0 0 8px rgb(10, 70, 40);
+}
+
+tumbnail_boder {
+	border: 0px solid white !important;
+}
+
+.nextbutton {
+	background-color: rgba(26, 120, 44, 1);
+	font-size: 14px;
+	color: white;
+	height: 20ox;
+}
+
+.widt30 {
+	width: 30% !important;
+	
+}
+
+.widt20 {
+	width: 20% !important;
+}
+
+.butpad{
+	padding-bottom: 15px;
+}
+
+.btn.btn-signin {
+	color: white;
+	background-color:rgba(26, 120, 44, 1);
+	padding: 0px;
+	font-weight: 400;
+	font-size: 18px;
+	height: 34px;
+	width: 100%;
+	-moz-border-radius: 1px;
+	-webkit-border-radius: 1px;
+	/* border-radius: 6px; */
+	border: none;
+	-o-transition: all 0.218s;
+	-moz-transition: all 0.218s;
+	-webkit-transition: all 0.218s;
+	transition: all 0.218s;
+}
+
+.btn.btn-signin:hover, .btn.btn-signin:active, .btn.btn-signin:focus {
+	background-color: rgba(26, 120, 44, 1);
+	color:white;
+}
+
+.forgot-password {
+	color: rgba(26, 120, 44, 1);
+}
+
+.forgot-password:hover, .forgot-password:active, .forgot-password:focus
+	{
+	color: rgba(26, 120, 44, 1);
+}
+
+/* For Login Page End */
+.paddd {
+	padding: 150px;
+}
+
+@media (max-width: 700px) {
+  .paddd {
+	padding: 300px;
+}
+}
+
+@media  (min-width: 701px) and  (max-width: 1050px) {
+  .paddd {
+	padding: 160px;
+}
+}
+
+.pdbt{
+	padding-bottom: 5px !important;
+}
+
+hr{
+	margin: 10px !important;
+}
+
+.landingimg {
+	width: 15%;
+}
+
+@media (max-width: 700px) {
+  .landingimg {
+	width: 35%;
+}
+}
+
+@media  (min-width: 701px) and  (max-width: 1050px) {
+  .landingimg {
+	width: 25%;
+}
+}
+
+.navimg{
+	width: 14%;
+}
+
+@media (max-width: 700px) {
+  .navimg{
+	width: 12%;
+}
+}
+
+@media  (min-width: 701px) and  (max-width: 1050px) {
+  .navimg{
+	width: 12%;
+}
+}
+
+
+.proflienavimg {
+	width: 50%;
+}
+
+.widt2 {
+	width: 28px;
+	display: inline !important;
+}
+
+.respimg {
+	width: 100% !important;
+	/* width: 150px !important; */
+	height: 150px !important;
+}
+
+@media (min-width: 590px) and (max-width: 1000px) {
+  .respimg {
+	width: 50% !important;
+	/* width: 150px !important; */
+	height: 150px !important;
+}
+}
+
+.iconinfo {
+	color: #009900;
+	font-size: 20px
+}
+
+@media (max-width: 700px) {
+  .iconinfo {
+	color: #009900;
+	font-size: 30px
+}
+}
+
+@media  (min-width: 701px) and  (max-width: 1050px) {
+  .iconinfo {
+	color: #009900;
+	font-size: 22px
+}
+}
+
+
+
+.ownthumbnail {
+	border: none !important;
+}
+
+.redtext {
+	color: red;
+}
+
+.lft{
+    left: 50px !important;
+}
+
+
+.mrg10{
+    margin-top:8px !important;
+ margin-bottom: 8px !important;   
+}
+
+.ovflw{
+    overflow: hidden !important; }
+
+.textgreen {
+	color: #1A6A2C !important;
+	text-decoration: underline !important;
+}
+
+.navwhite {
+	background-color: white;
+}
+
+/* layout.css Style */
+.paddform {
+	padding-left: 0px !important;
+}
+
+.formpad {
+	padding-left: 25px !important;
+	padding-right: -25px !important;
+}
+
+.panelwidth {
+	width:auto !important;
+	padding-left: 30px !important;
+	margin: none !important;
+}
+
+.upload-drop-zone {
+	height: 100px;
+	border-width: 1px;
+	margin-bottom: 5px;
+	margin-top: -10px;
+}
+
+/* skin.css Style*/
+.upload-drop-zone {
+	color: #ccc;
+	border-style: dashed;
+	border-color: #ccc;
+	line-height: 100px;
+	text-align: center
+}
+
+.upload-drop-zone.drop {
+	color: #222;
+	border-color: #222;
+}
+
+.image-preview-input {
+	position: relative;
+	overflow: hidden;
+	margin: 0px;
+	color: #333;
+	background-color: #fff;
+	border-color: #ccc;
+}
+
+.image-preview-input input[type=file] {
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin: 0;
+	padding: 0;
+	font-size: 20px;
+	cursor: pointer;
+	opacity: 0;
+	filter: alpha(opacity = 0);
+}
+
+.image-preview-input-title {
+	margin-left: 2px;
+}
+
+.atumgroup {
+	border: none !important;
+}
+
+.marg {
+	margin-top: 2px;
+}
+
+.lesswidth {
+	width: 105% !important;
+}
+
+.genderimg {
+	width: 17px !important;
+}
+
+
+@media (min-width: 992px){
+.col-md-11 {
+    width: 135% !important;
+    height: 0px !important;
+}
+}
+
+
+@media (min-width: 1200px){
+.col-lg-11 {
+    width: 135% !important;
+    height: 0px !important;
+}
+}
+
+.toggle {
+	position: relative;
+	display: inline-block;
+	pointer-events: auto;
+	margin: -5px;
+	padding: 5px;
+}
+
+.toggle input:checked+.track {
+	border-color: #4cd964;
+	background-color: #4cd964;
+}
+
+.toggle.dragging .handle {
+	background-color: #f2f2f2 !important;
+}
+
+.toggle.toggle-light input:checked+.track {
+	border-color: #ddd;
+	background-color: #ddd;
+}
+
+.toggle.toggle-stable input:checked+.track {
+	border-color: #b2b2b2;
+	background-color: #b2b2b2;
+}
+
+.toggle.toggle-positive input:checked+.track {
+	border-color: #387ef5;
+	background-color: #387ef5;
+}
+
+.toggle.toggle-calm input:checked+.track {
+	border-color: #11c1f3;
+	background-color: #11c1f3;
+}
+
+.toggle.toggle-assertive input:checked+.track {
+	border-color: #ef473a;
+	background-color: #ef473a;
+}
+
+.toggle.toggle-balanced input:checked+.track {
+	border-color: #33cd5f;
+	background-color: #33cd5f;
+}
+
+.toggle.toggle-energized input:checked+.track {
+	border-color: #ffc900;
+	background-color: #ffc900;
+}
+
+.toggle.toggle-royal input:checked+.track {
+	border-color: #886aea;
+	background-color: #886aea;
+}
+
+.toggle.toggle-dark input:checked+.track {
+	border-color: #444;
+	background-color: #444;
+}
+
+.toggle input {
+	display: none;
+}
+
+.subcheck{
+	padding-left: 18px;
+}
+
+
+.padbottm{
+	padding-bottom: :2px !improtant;
+}
+
+.padbot{
+	padding-bottom: 7px !important;
+}
+/* the track appearance when the toggle is "off" */
+.toggle .track {
+	-webkit-transition-timing-function: ease-in-out;
+	transition-timing-function: ease-in-out;
+	-webkit-transition-duration: 0.3s;
+	transition-duration: 0.3s;
+	-webkit-transition-property: background-color, border;
+	transition-property: background-color, border;
+	display: inline-block;
+	box-sizing: border-box;
+	width: 44px;
+	height: 25px;
+	border: solid 2px #e6e6e6;
+	border-radius: 16px;
+	background-color: #fff;
+	content: ' ';
+	cursor: pointer;
+	pointer-events: none;
+}
+
+/* Fix to avoid background color bleeding */
+/* (occurred on (at least) Android 4.2, Asus MeMO Pad HD7 ME173X) */
+.platform-android4_2 .toggle .track {
+	-webkit-background-clip: padding-box;
+}
+
+/* the handle (circle) thats inside the toggle's track area */
+/* also the handle's appearance when it is "off" */
+.toggle .handle {
+	-webkit-transition: 0.3s cubic-bezier(0, 1.1, 1, 1.1);
+	transition: 0.3s cubic-bezier(0, 1.1, 1, 1.1);
+	-webkit-transition-property: background-color, transform;
+	transition-property: background-color, transform;
+	position: absolute;
+	display: block;
+	width: 16px;
+	height: 16px;
+	border-radius: 16px;
+	background-color: #fff;
+	top: 9px;
+	left: 9px;
+	box-shadow: 0 2px 7px rgba(0, 0, 0, 0.35), 0 1px 1px rgba(0, 0, 0, 0.15);
+}
+
+.toggle .handle:before {
+	position: absolute;
+	top: -4px;
+	left: -21.5px;
+	padding: 18.5px 34px;
+	content: " ";
+}
+
+.toggle input:checked+.track .handle {
+	-webkit-transform: translate3d(20px, 0, 0);
+	transform: translate3d(20px, 0, 0);
+	background-color: #fff;
+}
+
+.item-toggle.active {
+	box-shadow: none;
+}
+
+.item-toggle, .item-toggle.item-complex .item-content {
+	padding-right: 99px;
+}
+
+.item-toggle.item-complex {
+	padding-right: 0;
+}
+
+.item-toggle .toggle {
+	position: absolute;
+	top: 10px;
+	right: 16px;
+	z-index: 3;
+}
+
+.toggle input:disabled+.track {
+	opacity: .6;
+}
+
+.nomargin {
+	margin: 0px !important;
+}
+
+
+
+
+.modalDialog {
+	position: fixed;
+	font-family: 'Source Sans Pro','Helvetica Neue',Helvetica,Arial,sans-serif;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+	z-index: 99999;
+	opacity:0;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+	pointer-events: none;
+}
+
+.modalDialog:target {
+	opacity:1;
+	pointer-events: auto;
+}
+
+.modalDialog > div {
+	width: 400px;
+	position: relative;
+	margin: 10% auto;
+	padding: 5px 20px 13px 20px;
+	border-radius: 10px;
+	background: #fff;
+	background: -moz-linear-gradient(#fff, #999);
+	background: -webkit-linear-gradient(#fff, #999);
+	background: -o-linear-gradient(#fff, #999);
+}
+.close {
+	background: #606061;
+	color: #FFFFFF;
+	line-height: 25px;
+	position: absolute;
+	right: -12px;
+	text-align: center;
+	top: -10px;
+	width: 24px;
+	text-decoration: none;
+	font-weight: bold;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	border-radius: 12px;
+	-moz-box-shadow: 1px 1px 3px #000;
+	-webkit-box-shadow: 1px 1px 3px #000;
+	box-shadow: 1px 1px 3px #000;
+}
+
+.close:hover { background: #00d9ff; }
+

@@ -1,0 +1,12 @@
+Server and Application Level Versions, Configurations and Settings
+
+1. PHP Version - 5.6.31
+2. MySQL Version - 5.0.11
+3. CodeIgniter - 3.1.4
+4. Install php-samplexml
+5. Set time zone GMT in Application Config and Mysql Server
+6. vsftpd.conf. write_enable (yes) for FTP Uploads through script
+7. ftp_put() - FTP_ASCII(For text/html) or FTP_BINARY(For images).
+8. GD Library
+9. 
+10.

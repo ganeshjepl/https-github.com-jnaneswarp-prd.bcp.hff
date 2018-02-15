@@ -1,0 +1,25 @@
+For Doctor feedback about visit.
+created on: 14-8-2017
+Moved to Prod:17-8-2017
+
+CREATE TABLE `doctor_feedback` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `medical_incident_visit_id` int(11) NOT NULL,
+  `comments` varchar(250) NOT NULL,
+  `is_retake` tinyint(1) NOT NULL DEFAULT 0,
+  `retake_status` tinyint(1) NOT NULL DEFAULT 0,
+  `cts` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `mts` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  `createdby` int(11) NOT NULL,
+  `modifiedby` int(11) NOT NULL,
+  `status` bit(1) NOT NULL DEFAULT b1,
+  `deleted` bit(1) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8
+
+
+For saving doctor id in prescription sending
+modified on: 18-Aug-2017
+
+ALTER TABLE `healingfields`.`prescription` 
+ADD COLUMN `doctor_id` INT NOT NULL AFTER `bcp_id`;

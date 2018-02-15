@@ -1,0 +1,99 @@
+.decnon{
+  text-decoration: none !important;	
+}
+
+.ownthumbnail {
+	border: none !important;
+	padding: 30px !important;
+/* 	line-height: 9.428571 !important; */
+	margin-right: 21px; 
+	height: 200px !important;
+	/* -webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	transform: rotate(45deg);	 */
+}
+
+/* .ownthumbnail .clik{
+-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	transform: rotate(-45deg);	
+} */
+
+
+.bgclr1{
+/* background-color: #155b9d; */
+background-color: rgba(26, 120, 44, 1);
+}
+
+.bgclr2{
+/* background-color: #1a9ec4; */
+background-color: rgba(26, 120, 44, 1);
+}
+
+.bgclr3{
+/* background-color: #3f7aa3; */
+background-color: rgba(26, 120, 44, 1);
+}
+
+.bgclr4{
+/* background-color: #e11a30; */
+background-color: rgba(26, 120, 44, 1);
+}
+
+
+.landingimg {
+	width: 15%;
+}
+
+@media (max-width: 700px) {
+  .landingimg {
+	width: 35%;
+}
+}
+
+@media  (min-width: 701px) and  (max-width: 1050px) {
+  .landingimg {
+	width: 25%;
+}
+}
+
+
+
+.paddd {
+	padding: 80px;
+}
+
+@media (max-width: 700px) {
+  .paddd {
+	padding: 80px;
+}
+}
+
+@media  (min-width: 701px) and  (max-width: 1050px) {
+  .paddd {
+	padding: 90px;
+}
+}
+
+.iconinfo {
+	color: #212121; /*  #5CFF70*/
+	font-size: 20px;
+}
+
+@media (max-width: 700px) {
+  .iconinfo {
+	color: #212121; /*  #5CFF70*/
+	font-size: 18px;
+}
+}
+
+@media  (min-width: 701px) and  (max-width: 1050px) {
+  .iconinfo {
+	color: #212121; /*  #5CFF70*/
+	font-size: 22px;
+}
+}

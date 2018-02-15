@@ -1,0 +1,251 @@
+body {
+  background: rgba(26, 120, 44, 1);
+  color: #666666;
+  font-family: 'RobotoDraft', 'Roboto', sans-serif;
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+/* Container */
+.container_login {
+  width: 30%;
+  margin: 0 auto;
+  padding: 50px 0 0 0;
+}
+
+/* Card */
+.card {
+  position: relative;
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 30px 0 20px 0;
+  box-sizing: border-box;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+  /* Title */
+  /* Inputs */
+  /* Button */
+  /* Footer */
+  /* Alt Card */
+}
+.card:first-child {
+  background: #f2f2f2;
+  height: 100%;
+  border-radius: 5px 5px 0 0;
+  margin: 0 10px;
+  padding: 0;
+}
+.card .input-container {
+  position: relative;
+  margin: 15px 15px;
+}
+.card .input-container input {
+  outline: none;
+  z-index: 1;
+  position: relative;
+  background: none;
+  width: 100%;
+  height: 45px;
+  border: 0;
+  color: #212121;
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+}
+.card .input-container input:focus ~ label {
+  color: #212121;
+  -webkit-transform: translate(-85px, -50%) scale(0.75);
+          transform: translate(-85px, -50%) scale(0.75);
+}
+.card .input-container input:focus ~ .bar:before, .card .input-container input:focus ~ .bar:after {
+  width: 50%;
+}
+.card .input-container input:valid ~ label {
+  color: #212121;
+  -webkit-transform: translate(-85px, -50%) scale(0.75);
+          transform: translate(-85px, -50%) scale(0.75);
+}
+.card .input-container label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width : 100%;
+  text-align: center;
+  color: black;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 60px;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+}
+.card .input-container .bar {
+  position: relative;
+  left: 0;
+  bottom: 0;
+  background: rgba(26, 120, 44, 1);
+  width: 100%;
+  height: 1px;
+  margin-bottom: 5px;
+}
+.card .input-container .bar:before, .card .input-container .bar:after {
+  content: '';
+  position: absolute;
+  background: rgba(26, 120, 44, 1);
+  width: 0;
+  height: 2px;
+  -webkit-transition: .2s ease;
+  transition: .2s ease;
+}
+.card .input-container .bar:before {
+  left: 50%;
+}
+.card .input-container .bar:after {
+  right: 50%;
+}
+.card .button-container {
+  margin: 0 10px;
+  text-align: center;
+  padding-bottom: 10px;
+}
+.card .button-container button {
+  outline: 0;
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  background: 0;
+  width: 150px;
+  border: 2px solid rgba(26, 120, 44, 1);
+  padding: 10px 0;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1;
+  text-transform: uppercase;
+  overflow: hidden;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+.card .button-container button span {
+  position: relative;
+  z-index: 1;
+  color: rgba(26, 120, 44, 1);
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+.card .button-container button:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: block;
+  background: rgba(26, 120, 44, 1);
+  width: 22px;
+  height: 22px;
+  border-radius: 100%;
+  margin: -15px 0 0 -15px;
+  opacity: 0;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+.card .button-container button:hover,.card .button-container button:hover span,
+ .card .button-container button:active, .card .button-container button:focus {
+  border-color: rgba(26, 120, 44, 1);
+}
+
+.card .button-container button:active span, .card .button-container button:focus span {
+  color: white;
+}
+.card .button-container button:active span, .card .button-container button:focus span {
+  color: white;
+}
+.card .button-container button:active:before, .card .button-container button:focus:before {
+  opacity: 1;
+  -webkit-transform: scale(10);
+  transform: scale(10);
+}
+
+.profile-img-card {
+    width: 96px;
+    height: 96px;
+    margin: 0 auto 10px;
+    display: block;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    
+}
+
+.card .footer {
+  margin: 5px 0 0;
+  color: #030303;
+  font-size: 13px;
+  font-weight: 300;
+  text-align: center;
+  padding-bottom: 10px;
+}
+.card .footer a {
+  color: inherit;
+  text-decoration: none;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+.card .footer a:hover {
+  color: #030303;
+}
+
+
+.success-msg-box{
+    text-align: center;color: green
+    
+}
+.error-msg-box{
+    text-align: center;color: red
+}
+
+.padtop15{
+padding-top:15px;
+}
+
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus
+input:-webkit-autofill, 
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0px 1000px rgba(0, 0, 0, 0) inset !important;
+  transition: background-color 5000s ease-in-out 0s !important;
+}
+.card-login-box{border-radius: 5px !important;}
+
+
+@media only screen and (max-width: 1024px) {
+.container_login{
+    width: 38%;
+}
+}
+
+@media only screen and (max-width: 768px) {
+.container_login{
+    width: 60%;
+}
+}
+@media only screen and (max-width: 600px) {
+.container_login{
+    width: 60%;
+}
+}
+@media only screen and (max-width: 480px) {
+.container_login{
+    width: 75%;
+}
+}
+@media only screen and (max-width: 360px) {
+.container_login{
+    width: 85%;
+}
+}

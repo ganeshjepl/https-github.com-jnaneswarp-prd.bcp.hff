@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>MEDICINE CATALOG</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <!-- Bootstrap 3.3.6 -->
+  <link rel="stylesheet" href="../../../css/ctrl/bootstrap.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="../../../css/ctrl/font-awesome.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="../../../css/ctrl/ionicons.min.css">
+  <!-- DataTables -->
+    <link rel="stylesheet" href="../../../plugins/morris/morris.css">
+
+  <link rel="stylesheet" href="../../../plugins/datatables/dataTables.bootstrap.css">
+  
+  <link href="../../../css/ctrl/bootstrap-editable.css" rel="stylesheet"/>
+    
+  
+  
+  <!-- Theme style -->
+  <link rel="stylesheet" href="../../../css/ctrl/AdminLTE.min.css">
+  <!-- AdminLTE Skins. Choose a skin from the css/skins
+       folder instead of downloading all of them to reduce the load. -->
+  <link rel="stylesheet" href="../../../css/ctrl/skins/_all-skins.min.css">
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->  
+</head>
+<body class="hold-transition skin-blue sidebar-mini">
+<div class="wrapper">
+
+  <header class="main-header">
+    <!-- Logo -->
+    <a href="data.html" class="logo">
+      <!-- mini logo for sidebar mini 50x50 pixels -->
+      <span class="logo-mini"><b>H</b>FF</span>
+      <!-- logo for regular state and mobile devices -->
+      <span class="logo-lg"><b>Admin</b>HFF</span>
+    </a>
+    <!-- Header Navbar: style can be found in header.less -->
+    <nav class="navbar navbar-static-top">
+      <!-- Sidebar toggle button-->
+      <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </a>
+
+      <div class="navbar-custom-menu">
+        <ul class="nav navbar-nav">
+          <li class="dropdown user user-menu">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <img src="../../../images/ctrl/A.png" class="user-image" alt="User Image">
+              <span class="hidden-xs">Admin</span>
+            </a>
+            <ul class="dropdown-menu">
+              <!-- User image -->
+              <li class="user-header">
+                <img src="../../../images/ctrl/A.png" class="img-circle" alt="User Image">
+
+                <p>
+                  Alexander Pierce - Web Developer
+                  <small>Member since Nov. 2012</small>
+                </p>
+              </li>
+              <!-- Menu Footer-->
+              <li class="user-footer">
+                <div class="pull-left">
+                  <a href="#" class="btn btn-default btn-flat">Profile</a>
+                </div>
+                <div class="pull-right">
+                  <a href="admin_login.html" class="btn btn-default btn-flat">Sign out</a>
+                </div>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <!-- Left side column. contains the logo and sidebar -->
+  <aside class="main-sidebar">
+    <!-- sidebar: style can be found in sidebar.less -->
+    <section class="sidebar">
+      <!-- Sidebar user panel -->
+      <!-- sidebar menu: : style can be found in sidebar.less -->
+      <ul class="sidebar-menu">
+        <!-- <li class="header">MAIN NAVIGATION</li> -->
+        
+        <li class="treeview ">
+          <a href="#">
+            <i class="fa fa-table"></i> <span>List's</span>
+                <span class="pull-right-container">
+                  <i class="fa fa-angle-left pull-right"></i>
+                </span></a>
+          <ul class="treeview-menu">
+            <li class=""><a href="data.html"><i class="fa fa-circle-o"></i>BCP's List</a></li>
+            <li class=""><a href="doctor.html"><i class="fa fa-circle-o"></i>Doctor's List</a></li>
+          </ul>
+        </li>
+        <li class="">
+          <a href="medicine_catalog.html">
+            <i class="fa fa-th"></i> <span>Medicine Catalog</span></a>
+        </li>
+        <li class="">
+          <a href="network_hospital.html">
+            <i class="fa fa-th"></i> <span>Network Of Hospitals</span></a>
+        </li>
+        
+        <li class="active">
+          <a href="chart.html">
+            <i class="fa fa-pie-chart"></i>
+            <span>Reports</span>   
+          </a>
+        </li>
+        
+      </ul>
+    </section>
+    <!-- /.sidebar -->
+  </aside>
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+      <h1>MEDICAL CHAT</h1>
+    </section>
+
+    <!-- Main content -->
+    <section class="content">
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="box">
+            <!-- /.box-header -->
+            <div class="box-body">
+
+          <div class="col-md-6">
+          <!-- LINE CHART -->
+          <div class="box box-info">
+            <div class="box-header with-border">
+              <h3 class="box-title">Line Chart</h3>
+            </div>
+            <div class="box-body chart-responsive">
+              <div class="chart" id="line-chart" style="height: 300px;"></div>
+            </div>
+            <!-- /.box-body -->
+          </div>
+          <!-- /.box -->
+
+        </div>
+
+          <div class="col-md-6">
+                    <!-- BAR CHART -->
+          <div class="box box-success">
+            <div class="box-header with-border">
+              <h3 class="box-title">Bar Chart</h3>
+            </div>
+            <div class="box-body chart-responsive">
+              <div class="chart" id="bar-chart" style="height: 300px;"></div>
+            </div>
+            <!-- /.box-body -->
+          </div>
+          <!-- /.box -->
+
+          </div>
+
+
+          <div class="col-md-6">
+                    <!-- BAR1 CHART -->
+          <div class="box box-success">
+            <div class="box-header with-border">
+              <h3 class="box-title">Bar Chart</h3>
+            </div>
+            <div class="box-body chart-responsive">
+              <div class="chart" id="bar-chart1" style="height: 300px;"></div>
+            </div>
+            <!-- /.box-body -->
+          </div>
+          <!-- /.box -->
+
+          </div>
+
+
+
+
+
+
+            </div>
+            <!-- /.box-body -->
+          </div>
+          <!-- /.box -->
+        </div>
+        <!-- /.col -->
+      </div>
+      <!-- /.row -->
+    </section>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+  <!-- <footer class="main-footer">
+    <div class="pull-right hidden-xs">
+      <b>Version</b> 2.3.8
+    </div>
+    <strong>Copyright &copy; 2014-2016 <a href="http://almsaeedstudio.com">Almsaeed Studio</a>.</strong> All rights
+    reserved.
+  </footer> -->
+
+  <!-- Add the sidebar's background. This div must be placed
+       immediately after the control sidebar -->
+  <div class="control-sidebar-bg"></div>
+</div>
+<!-- ./wrapper -->
+
+<!-- jQuery 2.2.3 -->
+<script src="../../../plugins/jQuery/jquery-2.2.3.min.js"></script>
+<!-- Bootstrap 3.3.6 -->
+<script src="../../../js/ctrl/bootstrap.min.js"></script>
+<!-- DataTables -->
+<!-- SlimScroll -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
+<script src="../../../plugins/morris/morris.min.js"></script>
+<!-- FastClick -->
+<script src="../../../plugins/fastclick/fastclick.js"></script>
+<script src="../../../js/ctrl/bootstrap-editable.min.js"></script>
+
+<!-- AdminLTE App -->
+<script src="../../../js/ctrl/app.min.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="../../../js/ctrl/demo.js"></script>
+
+<script>
+  $(function () {
+    "use strict";
+
+    // LINE CHART
+    var line = new Morris.Line({
+      element: 'line-chart',
+      resize: true,
+      data: [
+        {y: '2011 Q1', item1: 2666},
+        {y: '2011 Q2', item1: 2778},
+        {y: '2011 Q3', item1: 4912},
+        {y: '2011 Q4', item1: 3767},
+        {y: '2012 Q1', item1: 6810},
+        {y: '2012 Q2', item1: 5670},
+        {y: '2012 Q3', item1: 4820},
+        {y: '2012 Q4', item1: 15073},
+        {y: '2013 Q1', item1: 10687},
+        {y: '2013 Q2', item1: 8432}
+      ],
+      xkey: 'y',
+      ykeys: ['item1'],
+      labels: ['Item 1'],
+      lineColors: ['#3c8dbc'],
+      hideHover: 'auto'
+    });
+
+    //BAR CHART
+    var bar = new Morris.Bar({
+      element: 'bar-chart',
+      resize: true,
+      data: [
+        {y: '2006', a: 80},
+        {y: '2007', a: 75},
+        {y: '2008', a: 50},
+        {y: '2009', a: 75},
+        {y: '2010', a: 50},
+        {y: '2011', a: 75},
+        {y: '2012', a: 90}
+      ],
+      barColors: ['#1A782C'],
+      xkey: 'y',
+      ykeys: ['a'],
+      labels: ['CPU'],
+      hideHover: 'auto'
+    });
+
+    //BAR1 CHART
+    var bar = new Morris.Bar({
+      element: 'bar-chart1',
+      resize: true,
+      data: [
+        {y: '2006', a: 80},
+        {y: '2007', a: 75},
+        {y: '2008', a: 50},
+        {y: '2009', a: 75},
+        {y: '2010', a: 50},
+        {y: '2011', a: 75},
+        {y: '2012', a: 90}
+      ],
+      barColors: ['#1A782C'],
+      xkey: 'y',
+      ykeys: ['a'],
+      labels: ['CPU'],
+      hideHover: 'auto'
+    });
+
+  });
+</script>
+</body>
+</html>

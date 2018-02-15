@@ -1,0 +1,77 @@
+.maxwid {
+	max-width: 1600px;
+}
+.mrsidnav {
+	z-index: 3;
+	width: 300px;
+    /*margin-top: 30px;*/
+}
+
+.mrpatimg {
+	width: 65px;
+	height: 65px;
+}
+.mrbcpimg {
+	width: 80px;
+	height: 80px;
+	margin-top: -24px;
+}
+.cursur {
+	cursor: pointer;
+}
+.padrgt20{
+	padding-right: 20px;
+}
+.wid27{
+width: 27px;
+}
+.wid22{
+width: 22px;
+}
+.wid100{
+width: 100px;
+}
+.pres{
+	padding-top:10px;
+	width:60px;
+}
+.retk{
+	width: 27px;
+	margin-right: 5px;
+}
+.widht{
+/*	height: 100%;  */
+	width: 100%;
+	resize:vertical;
+}
+.mrglft300 {
+	margin-left: 300px;
+}
+
+@media ( max-width : 992px) {
+	.mrglft300 {
+	margin-left: 0;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
